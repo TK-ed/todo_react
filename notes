@@ -1,0 +1,5 @@
+We can nest multiple components in a single component called as a wrapper component
+wrapper component will accept props as {props.children}
+Classes inside can be called using 
+    const classes = 'div ' + {props.classes}
+    <div className='card'></div>

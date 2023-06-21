@@ -1,14 +1,17 @@
 import React from "react";
 
-export default function Todos(props) {
-    console.log(props.task);
+export default function Todos({todo, number}) {
+    // console.log(props.task);
     return(
         <div>
             <table>
-                <tr>
-                    <td>{props.number}</td>
-                    <td>{props.task}</td>
-                </tr>
+                    {todo.map( (todo) => {
+                        return (
+                        <tr>    
+                            {/* <td>{number}</td> */}
+                            <td>{todo}</td>
+                        </tr>)
+                    })}
             </table>
         </div>
     )
